@@ -14,12 +14,16 @@ const overviewInfo = [
 
 const OverviewSection = () => {
   return (
+    <>
+    <h3 className='text-[#63687D] dark:text-white text-[24px] font-bold'>Overview - Today</h3>
     <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-[30px] my-[50px]'>
         {overviewInfo.map((item, index) => (
             <OverviewCard key={index} title={item.title} platform={item.platform} number={item.number} isIncrease={item.isIncrease} percent={item.percent}/>
         ))}
         
     </div>
+    </>
+    
     
   )
 }
